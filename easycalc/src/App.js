@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 
+import Calculator from './Calculator';
+
 function App() {
   return (
     <div className="app">
@@ -10,24 +12,15 @@ function App() {
             <div className="logo">
               <span className="logo-symbol">*</span> KAVIA AI
             </div>
-            <button className="btn">Template Button</button>
+            <button className="btn" tabIndex={-1}>Template Button</button>
           </div>
         </div>
       </nav>
 
       <main>
-        <div className="container">
-          <div className="hero">
-            <div className="subtitle">AI Workflow Manager Template</div>
-            
-            <h1 className="title">easycalc</h1>
-            
-            <div className="description">
-              Start building your application.
-            </div>
-            
-            <button className="btn btn-large">Button</button>
-          </div>
+        <div className="container" style={{ minHeight: "100vh", paddingTop: "110px" }}>
+          <h1 className="title" style={{textAlign:'center', marginBottom:"16px", fontSize:"2rem"}}>EasyCalc</h1>
+          <Calculator />
         </div>
       </main>
     </div>
